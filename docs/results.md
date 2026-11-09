@@ -84,7 +84,7 @@ equipo corrija estos puntos antes de la entrega final.
 | 6 | Notebook, lectura de M5 y de LightGBM; informe, Tabla 5 | Tiempos de 136 s (M5) y 77 s (LightGBM) en el texto; las salidas dicen 139.6 s y 75 s. | Usar 139.6 s y 75 s. |
 | 7 | Notebook, Sección 6 (introducción) | "escalera de ocho intervenciones"; son seis pasos (M0–M5). | "seis pasos". |
 | 8 | Notebook, Sección 7 | Cita una "Sección 4.9" que no existe y afirma que el oversampling "hunde F1 macro": en M2 el F1 macro sube (0.6863 → 0.6887); lo que baja es el F1 micro y la precisión de la clase 1. El informe sí lo dice bien. | Corregir la referencia y la afirmación. |
-| 9 | Notebook, portada | El título dice "Parte 1" pero el notebook contiene las tres partes. | Se agregó una guía al inicio; el título original se conservó. |
+| 9 | Notebook, portada | El título dice "Parte 1" pero el notebook contiene las tres partes. | Se conservó el título original; el README del repositorio describe las tres partes. |
 | 10 | Notebook, contadores de ejecución | Algunas celdas finales tienen contadores no consecutivos (70, 72, 74…): se reejecutaron celdas sueltas en Colab. Las salidas guardadas son consistentes entre sí. | Ninguna; la ejecución local completa confirma que el notebook corre en orden. |
 | 11 | Informe | Solo existe en `.docx`; no hay PDF final. | Exportar a PDF para la entrega. |
 

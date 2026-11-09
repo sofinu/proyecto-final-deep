@@ -270,8 +270,7 @@ richter-predictor-nepal/
 
 **Sobre el notebook.** El notebook consolidado no se dividió en tres: las Partes 2 y 3 usan objetos
 creados en la Parte 1 (`transformar()`, estadísticos del encoding), y separarlo rompería su
-ejecución o duplicaría código. Se conserva completo, con una guía de secciones al inicio y las
-salidas originales. Las funciones reutilizables se extrajeron a `src/` sin cambiar su
+ejecución o duplicaría código. Se conserva completo, con las salidas originales. Las funciones reutilizables se extrajeron a `src/` sin cambiar su
 comportamiento.
 
 ## 9. Instalación y ejecución
