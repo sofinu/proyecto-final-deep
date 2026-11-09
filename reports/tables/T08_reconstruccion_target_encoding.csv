@@ -1,0 +1,7 @@
+﻿,variable,hipótesis,max |dif| en train,max |dif| en val
+0,geo_level_2_id,A: todas las filas de train (incluye la propia),9.370282e-14,9.370282e-14
+1,geo_level_2_id,B: leave-one-out,2.310798e-01,1.360190e-03
+2,geo_level_2_id,C: train + val,5.644309e-01,5.644309e-01
+3,geo_level_3_id,A: todas las filas de train (incluye la propia),3.286260e-14,3.286260e-14
+4,geo_level_3_id,B: leave-one-out,2.808867e-01,3.213356e-02
+5,geo_level_3_id,C: train + val,5.558884e-01,5.558884e-01

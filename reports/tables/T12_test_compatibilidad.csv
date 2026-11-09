@@ -1,0 +1,12 @@
+﻿,variable,categorías en test,categorías nuevas,filas de test con categoría nueva
+0,land_surface_condition,3,0,0
+1,foundation_type,5,0,0
+2,roof_type,3,0,0
+3,ground_floor_type,5,0,0
+4,other_floor_type,4,0,0
+5,position,4,0,0
+6,plan_configuration,10,0,0
+7,legal_ownership_status,4,0,0
+8,geo_level_1_id,31,0,0
+9,geo_level_2_id,1364,4,5
+10,geo_level_3_id,10213,266,327

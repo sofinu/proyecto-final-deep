@@ -1,0 +1,8 @@
+﻿,chequeo,valor
+0,building_id repetidos en train,0
+1,filas idénticas en las 38 predictoras (copias ...,16191
+2,filas que pertenecen a un grupo de perfiles id...,28544
+3,grupos de perfiles idénticos,12353
+4,grupos idénticos con etiquetas distintas,3825
+5,filas dentro de grupos con etiquetas distintas,9624
+6,filas de test idénticas a algún perfil de train,9255

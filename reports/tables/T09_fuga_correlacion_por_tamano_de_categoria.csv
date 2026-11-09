@@ -1,0 +1,14 @@
+﻿,conjunto,train (congelado),train (OOF),val (congelado)
+variable,edificios de train en la categoría,,,
+geo_level_2_id,1,1.0000,NaN,NaN
+geo_level_2_id,2–5,0.6517,0.3272,0.4601
+geo_level_2_id,6–20,0.4675,0.3195,0.4445
+geo_level_2_id,21–100,0.5098,0.4807,0.4860
+geo_level_2_id,>100,0.5869,0.5827,0.5875
+geo_level_2_id,todas,0.5826,0.5763,0.5818
+geo_level_3_id,1,1.0000,NaN,0.3126
+geo_level_3_id,2–5,0.6793,0.3309,0.4255
+geo_level_3_id,6–20,0.6789,0.6004,0.6182
+geo_level_3_id,21–100,0.6307,0.6023,0.6123
+geo_level_3_id,>100,0.5465,0.5374,0.5503
+geo_level_3_id,todas,0.6289,0.5897,0.6062

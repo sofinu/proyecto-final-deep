@@ -1,0 +1,5 @@
+﻿,archivo,filas,columnas,predictoras,nulos,building_id único
+0,train_values.csv,260601,39,38,0,True
+1,train_labels.csv,260601,2,0,0,True
+2,test_values.csv,86868,39,38,0,True
+3,submission_format.csv,86868,2,0,0,True

@@ -1,0 +1,4 @@
+﻿,Clase,% en train (real),% en test (predicho),Diferencia (pp)
+0,1 · daño bajo,9.64,7.26,-2.38
+1,2 · daño medio,56.89,64.68,7.79
+2,3 · daño casi total,33.47,28.06,-5.41

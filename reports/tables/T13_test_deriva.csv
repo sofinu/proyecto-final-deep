@@ -1,0 +1,16 @@
+﻿,variable,máx. diferencia de proporción (pp)
+0,land_surface_condition,0.084
+1,foundation_type,0.129
+2,roof_type,0.226
+3,ground_floor_type,0.113
+4,other_floor_type,0.244
+5,position,0.073
+6,plan_configuration,0.119
+7,legal_ownership_status,0.054
+8,count_floors_pre_eq,0.249
+9,geo_level_1_id,0.276
+10,count_floors_pre_eq (mediana train / test),2 / 2
+11,age (mediana train / test),15 / 15
+12,area_percentage (mediana train / test),7 / 7
+13,height_percentage (mediana train / test),5 / 5
+14,count_families (mediana train / test),1 / 1

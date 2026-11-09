@@ -1,0 +1,2 @@
+﻿,Modelo entregable,F1 micro val_B,F1 macro val_B,Recall clase 1 val_B,Precisión clase 1 val_B,Log-loss val_B,Brecha F1 (train-val_B)
+0,"M5 · Ensamble 3 semillas (MLP 64,32)",0.7429,0.6901,0.5145,0.6852,0.5748,-0.0002

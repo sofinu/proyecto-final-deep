@@ -1,0 +1,11 @@
+﻿,variable,parámetros ajustados con,media,desv. est.,max |diferencia| con el parquet
+0,count_floors_pre_eq,solo train,2.1294,0.7270,5.631051e-13
+1,count_floors_pre_eq,train + val,2.1297,0.7277,9.455437e-03
+2,age,solo train,21.3213,19.5802,4.014566e-13
+3,age,train + val,21.3079,19.5599,1.016224e-02
+4,area_percentage,solo train,8.0163,4.3995,1.950440e-12
+5,area_percentage,train + val,8.0181,4.3922,3.439566e-02
+6,height_percentage,solo train,5.4323,1.9096,8.455459e-13
+7,height_percentage,train + val,5.4344,1.9184,6.511128e-02
+8,count_families,solo train,0.9837,0.4183,2.181366e-11
+9,count_families,train + val,0.9839,0.4184,6.326005e-03

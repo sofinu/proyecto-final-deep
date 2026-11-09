@@ -1,0 +1,39 @@
+﻿,grupo,variable,tipo pandas,valores distintos (train),rango / categorías
+0,Geográfica (jerárquica),geo_level_1_id,int64,31,0 – 30
+1,Geográfica (jerárquica),geo_level_2_id,int64,1414,0 – 1427
+2,Geográfica (jerárquica),geo_level_3_id,int64,11595,0 – 12567
+3,Numérica,count_floors_pre_eq,int64,9,1 – 9
+4,Numérica,age,int64,42,0 – 995
+5,Numérica,area_percentage,int64,84,1 – 100
+6,Numérica,height_percentage,int64,27,2 – 32
+7,Numérica,count_families,int64,10,0 – 9
+8,Categórica de baja cardinalidad,land_surface_condition,object,3,"n, o, t"
+9,Categórica de baja cardinalidad,foundation_type,object,5,"h, i, r, u, w"
+10,Categórica de baja cardinalidad,roof_type,object,3,"n, q, x"
+11,Categórica de baja cardinalidad,ground_floor_type,object,5,"f, m, v, x, z"
+12,Categórica de baja cardinalidad,other_floor_type,object,4,"j, q, s, x"
+13,Categórica de baja cardinalidad,position,object,4,"j, o, s, t"
+14,Categórica de baja cardinalidad,plan_configuration,object,10,"a, c, d, f, m, n, o, q, s, u"
+15,Categórica de baja cardinalidad,legal_ownership_status,object,4,"a, r, v, w"
+16,Binaria: material de la superestructura,has_superstructure_adobe_mud,int64,2,0 – 1
+17,Binaria: material de la superestructura,has_superstructure_mud_mortar_stone,int64,2,0 – 1
+18,Binaria: material de la superestructura,has_superstructure_stone_flag,int64,2,0 – 1
+19,Binaria: material de la superestructura,has_superstructure_cement_mortar_stone,int64,2,0 – 1
+20,Binaria: material de la superestructura,has_superstructure_mud_mortar_brick,int64,2,0 – 1
+21,Binaria: material de la superestructura,has_superstructure_cement_mortar_brick,int64,2,0 – 1
+22,Binaria: material de la superestructura,has_superstructure_timber,int64,2,0 – 1
+23,Binaria: material de la superestructura,has_superstructure_bamboo,int64,2,0 – 1
+24,Binaria: material de la superestructura,has_superstructure_rc_non_engineered,int64,2,0 – 1
+25,Binaria: material de la superestructura,has_superstructure_rc_engineered,int64,2,0 – 1
+26,Binaria: material de la superestructura,has_superstructure_other,int64,2,0 – 1
+27,Binaria: uso secundario,has_secondary_use,int64,2,0 – 1
+28,Binaria: uso secundario,has_secondary_use_agriculture,int64,2,0 – 1
+29,Binaria: uso secundario,has_secondary_use_hotel,int64,2,0 – 1
+30,Binaria: uso secundario,has_secondary_use_rental,int64,2,0 – 1
+31,Binaria: uso secundario,has_secondary_use_institution,int64,2,0 – 1
+32,Binaria: uso secundario,has_secondary_use_school,int64,2,0 – 1
+33,Binaria: uso secundario,has_secondary_use_industry,int64,2,0 – 1
+34,Binaria: uso secundario,has_secondary_use_health_post,int64,2,0 – 1
+35,Binaria: uso secundario,has_secondary_use_gov_office,int64,2,0 – 1
+36,Binaria: uso secundario,has_secondary_use_use_police,int64,2,0 – 1
+37,Binaria: uso secundario,has_secondary_use_other,int64,2,0 – 1

@@ -1,0 +1,57 @@
+{
+  "modelo": "M5 · ensamble de 3 MLPClassifier (64, 32), alpha = 1e-5, semillas 42/43/44",
+  "val_B": {
+    "f1_micro": 0.7425655193584283,
+    "f1_macro": 0.6902398047928062,
+    "recall_clase_1": 0.5200955033824115,
+    "precision_clase_1": 0.6782563570316554,
+    "log_loss": 0.574160358994222,
+    "brecha_f1_train_menos_val_B": 0.0012084637574580892
+  },
+  "val_A": {
+    "f1_micro": 0.7377973906369916,
+    "f1_macro": 0.6848905713377414,
+    "recall_clase_1": 0.5214968152866242,
+    "precision_clase_1": 0.6619504800404244,
+    "log_loss": 0.585363046387592
+  },
+  "f1_micro_train": 0.7437739831158864,
+  "f1_micro_pipeline_muestra_2000_val": 0.7435,
+  "epocas_por_semilla": {
+    "42": 13,
+    "43": 12,
+    "44": 17
+  },
+  "log_loss_val_A_por_semilla": {
+    "42": 0.5901204847247326,
+    "43": 0.5927096707008688,
+    "44": 0.5910561230858412
+  },
+  "tiempo_entrenamiento_s": 311.5,
+  "referencia_notebook_val_B": {
+    "f1_micro": 0.7429,
+    "f1_macro": 0.6901,
+    "recall_clase_1": 0.5145,
+    "precision_clase_1": 0.6852,
+    "log_loss": 0.5748,
+    "brecha_f1_train_menos_val_B": -0.0002
+  },
+  "diferencia_vs_notebook_val_B": {
+    "f1_micro": -0.0003,
+    "f1_macro": 0.0001,
+    "recall_clase_1": 0.0056,
+    "precision_clase_1": -0.0069,
+    "log_loss": -0.0006,
+    "brecha_f1_train_menos_val_B": 0.0014
+  },
+  "n": {
+    "train": 208480,
+    "val_A": 26060,
+    "val_B": 26061
+  },
+  "entorno": {
+    "python": "3.11.9",
+    "scikit-learn": "1.7.2",
+    "numpy": "1.26.4"
+  }
+}
