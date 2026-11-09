@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "richter-predictor"
+version = "1.0.0"
+description = "Predicción de daño estructural post-terremoto (Richter's Predictor, Nepal 2015) con un ensamble de redes MLP"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ana Ferrer" },
+    { name = "Sofía Nuñez" },
+    { name = "Valentina Ramírez" },
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "datos: requiere los CSV de DrivenData en data/raw/",
+    "artefactos: requiere el modelo entrenado en artifacts/models/",
+]

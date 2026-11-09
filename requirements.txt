@@ -1,0 +1,21 @@
+# Entorno verificado: Python 3.11.9 (Windows 11). Ver README, sección "Reproducibilidad".
+# Las versiones están fijadas porque el modelo serializado (joblib) depende de scikit-learn
+# y un cambio de versión puede alterar ligeramente los resultados del entrenamiento.
+
+# Núcleo del pipeline (src/richter_predictor)
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.7.2
+scipy==1.16.2
+joblib==1.5.2
+pyarrow==21.0.0
+
+# Notebook (figuras y referencia LightGBM)
+matplotlib==3.10.7
+lightgbm==4.6.0
+ipykernel==7.0.1
+nbconvert==7.17.1
+nbformat==5.10.4
+
+# Pruebas
+pytest==8.4.2
