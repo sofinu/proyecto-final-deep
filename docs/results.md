@@ -72,8 +72,8 @@ tiene 2,513 casos en val_B. Las métricas del reentrenamiento se guardan en
 ### Ejecución completa del notebook en el entorno local
 
 El notebook del repositorio se ejecutó de principio a fin con
-`python -m nbconvert --execute` (Python 3.11.9, Windows 11): 0 errores, 47 minutos. Las Partes 1
-y 4 (auditoría, preprocesamiento, test) reproducen las mismas cifras. Los entrenamientos varían:
+`python -m nbconvert --execute` (Python 3.11.9, Windows 11): 0 errores, 47 minutos. Las Secciones 1–5
+(auditoría, preprocesamiento, conjunto de prueba y EDA) reproducen las mismas cifras. Los entrenamientos varían:
 
 | Resultado (val_B) | Colab (oficial) | Local |
 |---|---:|---:|
