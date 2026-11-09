@@ -1,0 +1,73 @@
+# ------------------------------------------------------------------
+# Datos: los CSV de DrivenData y todo lo derivado fila a fila de ellos
+# (incluidas las etiquetas) NO se versionan. Ver data/README.md.
+# ------------------------------------------------------------------
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/preprocesamiento_metadata.json
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# CSV sueltos fuera de las carpetas permitidas (evita subir datos por accidente)
+*.csv
+!reports/tables/*.csv
+!artifacts/predictions/*.csv
+
+# Salidas que el notebook escribe en su carpeta cuando se ejecuta en Colab
+notebooks/*.png
+notebooks/*.csv
+notebooks/figuras/
+notebooks/tablas/
+notebooks/datos_propuesta/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Caches y compilados de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Credenciales y configuración local
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+secrets*.json
+kaggle.json
+.drivendata*
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+~$*
+
+# Temporales
+*.tmp
+*.log
+tmp/
