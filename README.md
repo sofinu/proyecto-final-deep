@@ -280,8 +280,8 @@ Requisitos: Python 3.11 (verificado con 3.11.9) y Git.
 ### 9.1 Clonar e instalar
 
 ```bash
-git clone https://github.com/<usuario>/richter-predictor-nepal.git
-cd richter-predictor-nepal
+git clone https://github.com/sofinu/proyecto-final-deep.git
+cd proyecto-final-deep
 
 python -m venv .venv
 # Windows
@@ -334,7 +334,8 @@ Se puede abrir con Jupyter o VS Code y ejecutar en orden, o desde la terminal:
 python -m nbconvert --to notebook --execute --inplace notebooks/proyecto_integrador_richter.ipynb --ExecutePreprocessor.timeout=3600
 ```
 
-La ejecución completa entrena toda la escalera y LightGBM (≈ 15–20 minutos) y sobrescribe
+La ejecución completa entrena toda la escalera y LightGBM (47 minutos en un portátil con Windows;
+la ejecución original en Colab fue más rápida) y sobrescribe
 `reports/figures/`, `reports/tables/` y los archivos derivados de `data/processed/`.
 
 ## 10. Reproducibilidad
@@ -352,14 +353,18 @@ La ejecución completa entrena toda la escalera y LightGBM (≈ 15–20 minutos)
 
 - El split y el preprocesamiento de `src/` reproducen el parquet original (diferencia ≤ 4e-15).
 - La matriz de entrenamiento que construye `src/` es idéntica bit a bit a la del notebook.
-- El notebook adaptado se ejecutó de principio a fin en la estructura del repositorio.
+- El notebook se ejecutó de principio a fin en la estructura del repositorio, sin errores.
+  En esa ejecución local M5 obtuvo F1 micro 0.7429 y F1 macro 0.6902 en val_B, prácticamente lo
+  mismo que en Colab, aunque el grid de M1 eligió α = 0.01 en vez de 1e-5 (los cuatro valores de α
+  quedan dentro de 0.003 de F1 en val_A).
 
 **Limitaciones de reproducibilidad:**
 
 - Con la misma entrada, semillas e hiperparámetros, el entrenamiento local no reproduce los pesos
   exactos de la ejecución en Colab (Python 3.13, versiones de librerías no registradas): las
-  métricas difieren en el cuarto decimal (F1 micro 0.7426 frente a 0.7429). Las cifras oficiales
-  son las del notebook original.
+  métricas difieren en el cuarto decimal (F1 micro 0.7426 frente a 0.7429). Por la misma razón,
+  la elección de α en M1 puede cambiar entre entornos. Las cifras oficiales son las del notebook
+  original.
 - El modelo original de Colab y su `submission_M5.csv` no se guardaron; los del repositorio son
   reentrenamientos.
 - El código que generó el parquet "congelado" histórico no se conserva; se reconstruyó y verificó

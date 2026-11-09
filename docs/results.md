@@ -69,6 +69,30 @@ ninguna conclusión. Las del recall y la precisión de la clase 1 son mayores po
 tiene 2,513 casos en val_B. Las métricas del reentrenamiento se guardan en
 `artifacts/models/metricas_m5.json`.
 
+### Ejecución completa del notebook en el entorno local
+
+El notebook del repositorio se ejecutó de principio a fin con
+`python -m nbconvert --execute` (Python 3.11.9, Windows 11): 0 errores, 47 minutos. Las Partes 1
+y 4 (auditoría, preprocesamiento, test) reproducen las mismas cifras. Los entrenamientos varían:
+
+| Resultado (val_B) | Colab (oficial) | Local |
+|---|---:|---:|
+| α elegido en M1 (por F1 micro en val_A) | 1e-5 | 0.01 |
+| M0 F1 micro | 0.7403 | 0.7410 |
+| M2 F1 micro / recall c1 | 0.7256 / 0.7449 | 0.7269 / 0.7429 |
+| M4 F1 micro | 0.7411 | 0.7428 |
+| **M5 F1 micro / F1 macro** | **0.7429 / 0.6901** | **0.7429 / 0.6902** |
+| M5 recall / precisión c1 | 0.5145 / 0.6852 | 0.5177 / 0.6797 |
+| M5 log-loss | 0.5748 | 0.5736 |
+| LightGBM F1 micro / recall c1 | 0.7474 / 0.5404 | 0.7474 / 0.5404 |
+| Pipeline, 2,000 filas de val | 0.7405 | 0.7480 |
+| Test predicho (% clases 1 / 2 / 3) | 7.26 / 64.68 / 28.06 | 7.33 / 64.68 / 27.99 |
+| T10: brecha F1 MLP congelado → OOF | 0.0188 → 0.0018 | 0.0183 → 0.0015 |
+
+Las conclusiones no cambian: M5 sigue siendo el mejor MLP, M2 sigue bajando el F1 micro y LightGBM
+(determinista) da exactamente lo mismo. El cambio de α confirma lo que dice el notebook: los cuatro
+valores quedan a menos de 0.003 de F1 en val_A, así que elegir entre ellos es casi ruido.
+
 ## 4. Discrepancias encontradas
 
 No se modificó el texto del notebook, del informe ni de la presentación; se recomienda que el
@@ -80,7 +104,7 @@ equipo corrija estos puntos antes de la entrega final.
 | 2 | Presentación, diapositiva 7 | Dice que la distribución predicha en test "se mantiene razonable … sin señales de desajuste grave". El notebook y el informe (Tabla 6) señalan +7.79 pp en la clase 2 y lo tratan como la principal limitación. | Alinear el mensaje con el informe. |
 | 3 | Presentación, diapositiva 10 | "Repositorio de código: [enlace de GitHub]" sin completar. | Poner el enlace cuando se publique. |
 | 4 | Notebook, Sección 2 (descripción) y lectura de 2.2 | Dicen "39 variables predictoras"; la salida de la celda y el informe dicen 38. | 38 predictoras (39 columnas con `building_id`). |
-| 5 | Notebook, lectura de la Tabla T10 (Sección 3.5) | El texto cita brecha 0.0183 → 0.0015, F1 val 0.7367 → 0.7394, F1 macro 0.6814 → 0.6841, log-loss 0.5913 → 0.5839; la tabla guardada muestra 0.0188 → 0.0018, 0.7366 → 0.7395, 0.6808 → 0.6830, 0.5907 → 0.5837. El párrafo termina en una frase incompleta ("la decisión de adoptar OOF"). | Actualizar el texto con la tabla de la ejecución final. |
+| 5 | Notebook, lectura de la Tabla T10 (Sección 3.5) | El texto cita brecha 0.0183 → 0.0015, F1 val 0.7367 → 0.7394, F1 macro 0.6814 → 0.6841, log-loss 0.5913 → 0.5839; la tabla guardada muestra 0.0188 → 0.0018, 0.7366 → 0.7395, 0.6808 → 0.6830, 0.5907 → 0.5837. El párrafo termina en una frase incompleta ("la decisión de adoptar OOF"). Las cifras del texto coinciden con la ejecución local (§3): el texto se escribió con otra ejecución. | Actualizar el texto con la tabla de la ejecución final. |
 | 6 | Notebook, lectura de M5 y de LightGBM; informe, Tabla 5 | Tiempos de 136 s (M5) y 77 s (LightGBM) en el texto; las salidas dicen 139.6 s y 75 s. | Usar 139.6 s y 75 s. |
 | 7 | Notebook, Sección 6 (introducción) | "escalera de ocho intervenciones"; son seis pasos (M0–M5). | "seis pasos". |
 | 8 | Notebook, Sección 7 | Cita una "Sección 4.9" que no existe y afirma que el oversampling "hunde F1 macro": en M2 el F1 macro sube (0.6863 → 0.6887); lo que baja es el F1 micro y la precisión de la clase 1. El informe sí lo dice bien. | Corregir la referencia y la afirmación. |

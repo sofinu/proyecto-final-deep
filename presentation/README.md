@@ -21,4 +21,4 @@ Antes de grabar o entregar conviene corregir tres puntos (detalle en `docs/resul
   **train − val_B**.
 - Diapositiva 7: el texto dice que la distribución predicha en test "se mantiene razonable",
   mientras que el informe reporta +7.79 pp en la clase 2 como limitación principal.
-- Diapositiva 10: falta el enlace del repositorio de GitHub.
+- Diapositiva 10: falta el enlace del repositorio: https://github.com/sofinu/proyecto-final-deep
